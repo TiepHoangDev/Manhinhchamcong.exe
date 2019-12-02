@@ -11356,3 +11356,63 @@
    at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
    --- End of inner exception stack trace ---
    at System.Net.HttpWebRequest.GetResponse()
+12/2/2019 13:24:57>>[Main]:v2019.11.5.53 | open app ManHinhChamCong
+12/2/2019 13:24:58>>[MoveNext>>Start>>Connect_manHinhChamCongHub>>MoveNext>>Start>>frmMain_Load]:Connect manHinhChamCongHub http://localhost:20192/...
+12/2/2019 13:24:59>>[CurrentDomain_FirstChanceException>>InternalEndConnect>>DoMultipleAddressConnectCallback>>MultipleAddressConnectCallback>>Complete>>Complete]:v2019.11.5.53 | CurrentDomain_FirstChanceException System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:20192
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+12/2/2019 13:24:59>>[CurrentDomain_FirstChanceException>>DoMultipleAddressConnectCallback>>MultipleAddressConnectCallback>>Complete>>Complete>>ProtectedInvokeCallback]:v2019.11.5.53 | CurrentDomain_FirstChanceException System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:20192
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+12/2/2019 13:24:59>>[CurrentDomain_FirstChanceException>>InternalEndConnect>>EndConnect>>EndConnect>>FromAsyncCoreLogic>><FromAsyncImpl>b__0]:v2019.11.5.53 | CurrentDomain_FirstChanceException System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:20192
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+12/2/2019 13:24:59>>[CurrentDomain_FirstChanceException>>ThrowForNonSuccess>>HandleNonSuccessAndDebuggerNotification>>GetResult>>MoveNext>>InvokeMoveNext]:v2019.11.5.53 | CurrentDomain_FirstChanceException System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:20192
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+12/2/2019 13:25:00>>[InvokeMoveNext>>RunInternal>>Run>>Run>><OutputAsyncCausalityEvents>b__0>>Invoke]:System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:20192
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at ManHinhChamCong.frmMain.<Connect_manHinhChamCongHub>d__76.MoveNext() in D:\Project\ChamCong.QuangHanh.v2\ChamCongQuangHanh.v2\ManHinhChamCong\Hubs\ManHinhChamCongHub.cs:line 83
+12/2/2019 13:25:00>>[DisconnectHub>>MoveNext>>InvokeMoveNext>>RunInternal>>Run>>Run]:DisconnectHub-ed
+12/2/2019 13:25:01>>[CurrentDomain_FirstChanceException>>InternalEndConnect>>DoMultipleAddressConnectCallback>>MultipleAddressConnectCallback>>Complete>>Complete]:v2019.11.5.53 | CurrentDomain_FirstChanceException System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:20192
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+12/2/2019 13:25:01>>[CurrentDomain_FirstChanceException>>DoMultipleAddressConnectCallback>>MultipleAddressConnectCallback>>Complete>>Complete>>ProtectedInvokeCallback]:v2019.11.5.53 | CurrentDomain_FirstChanceException System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:20192
+   at System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(Object result, MultipleAddressConnectAsyncResult context)
+12/2/2019 13:25:01>>[CurrentDomain_FirstChanceException>>InternalEndConnect>>EndConnect>>EndConnect>>FromAsyncCoreLogic>><FromAsyncImpl>b__0]:v2019.11.5.53 | CurrentDomain_FirstChanceException System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:20192
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+12/2/2019 13:25:01>>[CurrentDomain_FirstChanceException>>ThrowForNonSuccess>>HandleNonSuccessAndDebuggerNotification>>GetResult>>MoveNext>>InvokeMoveNext]:v2019.11.5.53 | CurrentDomain_FirstChanceException System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:20192
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+12/2/2019 13:25:01>>[MoveNext>>InvokeMoveNext>>RunInternal>>Run>>Run>><OutputAsyncCausalityEvents>b__0]:System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:20192
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at ManHinhChamCong.frmMain.<ConnectHubNhanVien>d__128.MoveNext() in D:\Project\ChamCong.QuangHanh.v2\ChamCongQuangHanh.v2\ManHinhChamCong\Hubs\NhanVienHub.cs:line 185
+12/2/2019 13:25:01>>[MoveNext>>InvokeMoveNext>>RunInternal>>Run>>Run>><OutputAsyncCausalityEvents>b__0]:System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:20192
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at ManHinhChamCong.frmMain.<ConnectHubNhanVien>d__128.MoveNext() in D:\Project\ChamCong.QuangHanh.v2\ChamCongQuangHanh.v2\ManHinhChamCong\Hubs\NhanVienHub.cs:line 185
+12/2/2019 13:25:01>>[MoveNext>>Start>>Connect_manHinhChamCongHub>>MoveNext>>Start>>CheckHub]:Connect manHinhChamCongHub http://localhost:20192/...
