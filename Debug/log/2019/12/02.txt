@@ -11416,3 +11416,9 @@
    at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
    at ManHinhChamCong.frmMain.<ConnectHubNhanVien>d__128.MoveNext() in D:\Project\ChamCong.QuangHanh.v2\ChamCongQuangHanh.v2\ManHinhChamCong\Hubs\NhanVienHub.cs:line 185
 12/2/2019 13:25:01>>[MoveNext>>Start>>Connect_manHinhChamCongHub>>MoveNext>>Start>>CheckHub]:Connect manHinhChamCongHub http://localhost:20192/...
+12/2/2019 13:29:04>>[Main]:v2019.11.5.53 | open app ManHinhChamCong
+12/2/2019 13:29:05>>[MoveNext>>Start>>Connect_manHinhChamCongHub>>MoveNext>>Start>>frmMain_Load]:Connect manHinhChamCongHub http://localhost:20192/...
+12/2/2019 13:35:34>>[Main]:v2019.11.5.53 | open app ManHinhChamCong
+12/2/2019 13:35:36>>[MoveNext>>Start>>Connect_manHinhChamCongHub>>MoveNext>>Start>>frmMain_Load]:Connect manHinhChamCongHub http://localhost:20192/...
+12/2/2019 13:37:36>>[CurrentDomain_FirstChanceException>>LoadSymbolsFromType>><CreateArgumentArray>b__22_8>>CreateArgumentArray>>BindCore>>Bind]:v2019.11.5.53 | CurrentDomain_FirstChanceException Microsoft.CSharp.RuntimeBinder.ResetBindException: Exception of type 'Microsoft.CSharp.RuntimeBinder.ResetBindException' was thrown.
+   at Microsoft.CSharp.RuntimeBinder.SymbolTable.LoadSymbolsFromType(Type originalType)
